@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — SCC Decisions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red: #C41E3A;
+            --ink: #1C1A18;
+            --stone: #6B6560;
+            --rule: #D4C9B8;
+            --cream: #FAF7F2;
+            --dark: #0F0E0D;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Source Serif 4', Georgia, serif;
+            background: var(--cream);
+            color: var(--ink);
+            line-height: 1.8;
+        }
+        header {
+            background: var(--dark);
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 5rem 2rem 6rem;
+        }
+        .eyebrow {
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            line-height: 1.15;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+        }
+        .updated {
+            font-size: 0.85rem;
+            color: var(--stone);
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--rule);
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 2.5rem 0 0.75rem;
+        }
+        p { color: var(--stone); margin-bottom: 1rem; font-size: 1rem; }
+        ul {
+            color: var(--stone);
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ul li { margin-bottom: 0.4rem; }
+        a { color: var(--red); }
+        footer {
+            background: var(--dark);
+            padding: 2rem 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.3);
+        }
+        footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 0.75rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">← SCC Decisions</a>
+</header>
+
+<main>
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 23, 2026</p>
+
+    <p>SCC Decisions ("the app", "we", "our") is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights regarding that information.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect the minimum information necessary to provide the app's features:</p>
+    <ul>
+        <li><strong>Device token</strong> — A unique identifier provided by Apple's Push Notification service (APNs) that allows us to send you notifications about new Supreme Court of Canada decisions. This token is anonymous and does not identify you personally.</li>
+        <li><strong>Device language preference</strong> — Whether your device is set to English or French, so we can send notifications in your language.</li>
+    </ul>
+    <p>We do not collect your name, email address, location, or any other personal information.</p>
+
+    <h2>2. Information We Do Not Collect</h2>
+    <ul>
+        <li>No account registration is required</li>
+        <li>No browsing history or search queries are stored on our servers</li>
+        <li>No analytics or tracking SDKs are included in the app</li>
+        <li>No advertising networks have access to your data</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>Your device token is used solely to deliver push notifications when a new Supreme Court of Canada decision is published. We do not use it for any other purpose, share it with third parties, or sell it.</p>
+
+    <h2>4. Data Storage</h2>
+    <p>Device tokens are stored securely in a PostgreSQL database hosted on Railway (railway.app) in the United States. Tokens are automatically removed if they become invalid (for example, if you uninstall the app).</p>
+    <p>Bookmarks you save are stored locally on your device only and are never transmitted to our servers.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>The app retrieves legal decision data from the following third-party sources:</p>
+    <ul>
+        <li><strong>CanLII</strong> (canlii.org) — Provides decision metadata including titles, citations, dates, and keywords. Subject to CanLII's own privacy policy.</li>
+        <li><strong>Supreme Court of Canada</strong> (scc-csc.ca) — Provides Case in Brief PDF documents and the RSS feed for new decisions.</li>
+    </ul>
+    <p>When you tap "Read Full Decision", the app opens a web page on CanLII's website in an in-app browser. Your interaction with that page is governed by CanLII's privacy policy.</p>
+
+    <h2>6. Apple and In-App Purchases</h2>
+    <p>Subscription purchases are processed entirely by Apple through the App Store. We do not receive or store your payment information. Apple's privacy policy governs all payment data.</p>
+
+    <h2>7. Push Notifications</h2>
+    <p>Push notifications are optional and controlled by you through iOS Settings. You can disable notifications at any time by going to Settings → Notifications → SCC Decisions. If you disable notifications, your device token is no longer used to send you alerts, though it may remain in our database until it expires or you uninstall the app.</p>
+
+    <h2>8. Data Retention</h2>
+    <p>Device tokens are retained for as long as the app is installed and notifications are enabled. Tokens that Apple identifies as invalid (due to uninstallation or other reasons) are automatically deleted from our database.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>SCC Decisions is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. We will post any changes on this page with an updated date. Continued use of the app after changes constitutes acceptance of the new policy.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions or concerns about this privacy policy, please contact us at:</p>
+    <p><a href="mailto:azzopalj@gmail.com">azzopalj@gmail.com</a></p>
+
+    <p style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--rule); font-size:0.85rem;">
+        SCC Decisions is an independent application and is not affiliated with, endorsed by, or connected to the Supreme Court of Canada, CanLII, or the Federation of Law Societies of Canada.
+    </p>
+</main>
+
+<footer>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:azzopalj@gmail.com">Contact</a>
+    </div>
+    <p style="margin-top:1rem;">© 2026 SCC Decisions</p>
+</footer>
+
+</body>
+</html>
